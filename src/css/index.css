@@ -1,0 +1,270 @@
+/* Carousel */
+.carousel-item {
+	height: 80vh;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-position: center center;
+	object-fit: cover;
+	min-height: 35rem;
+	width: 100%;
+}
+
+.carousel-caption {
+	bottom: 40%;
+	z-index: 2;
+}
+
+.carousel-caption h5 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+
+.carousel-inner:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+/* Números */
+.offer .cards .card {
+	width: 16rem;
+	height: 8rem;
+	color: #fffffc;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 1rem;
+}
+
+.offer .cards .card .card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.offer .cards .card:last-child {
+	margin-right: 0;
+}
+
+.offer .card i {
+	color: var(--text-white);
+	font-size: 2.6rem;
+	margin-bottom: 10px;
+}
+
+.offer .card-text {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+/* Categories */
+.categories .card {
+	width: 15rem;
+	height: 16.7rem;
+	border-radius: 10px;
+	margin-right: 1rem;
+	margin-top: 1rem;
+}
+
+.categories .card .card-img {
+	width: 4.5rem;
+	height: 3.5rem;
+}
+
+.categories .card .card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.categories .card h5 {
+	height: 2rem;
+	border-radius: 10px;
+	margin-right: 1rem;
+	margin-top: 1rem;
+}
+
+.categories .card i {
+	color: black;
+}
+
+.categories .card button:hover {
+	background-color: var(--primary-color);
+}
+
+.categories .card button:hover i {
+	color: var(--text-white);
+	opacity: 1;
+}
+
+.categories .card .btn {
+	height: 2.3rem;
+	color: var(--text-white);
+	left: 9.8rem;
+}
+
+.categories .card .btn i {
+	font-size: 1.5rem;
+	color: #121212;
+	opacity: 0.7;
+}
+
+/* Courses */
+.courses .card {
+	width: 20rem;
+	border: none;
+	background-color: white;
+}
+
+.courses .card .d-flex {
+	height: 2rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.courses .card .d-flex p {
+	margin: 0;
+}
+
+.courses .card .btn {
+	color: var(--text-white);
+	background-color: #fd6a88;
+	cursor: pointer;
+}
+
+.courses .card .category-group {
+	width: 6rem;
+	height: 2rem;
+	font-size: 1rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.courses .card .price {
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.courses .card .card-text {
+	font-size: 0.7rem;
+	margin-bottom: 0;
+}
+
+.courses .card .btn {
+	color: var(--text-white);
+	background-color: #fd6a88;
+	cursor: pointer;
+}
+
+.courses .rating-group-text {
+	font-size: .9rem;
+}
+
+.courses .rating-group-text:first-child {
+	margin-right: .2rem;
+}
+
+.courses .rating-group-text:last-child {
+	margin-left: .2rem;
+}
+
+.rate-area {
+	float: left;
+	border-style: none;
+}
+
+.rate-area:not(:checked) > input {
+	position: absolute;
+	top: -9999px;
+	clip: rect(0, 0, 0, 0);
+}
+
+.rate-area:not(:checked) > label {
+	float: right;
+	width: 0.8em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 140%;
+	color: lightgrey;
+}
+
+.rate-area:not(:checked) > label:before {
+	content: "★";
+}
+.rate-area > input:checked ~ label {
+	color: var(--primary-color);
+}
+
+
+/* Como começar */
+.how-to-start .row .card {
+	width: 23rem;
+	border-radius: 2px;
+}
+
+.how-to-start .row .step {
+	width: 4rem;
+	height: 3rem;
+	background-color: #ddd;
+	font-size: 1.7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+
+/* Media Queries */
+@media (max-width: 992px) {
+	li .my-btn-primary,
+	li .my-btn-secondary {
+		margin-top: 1rem;
+	}
+
+	.offer .cards .card {
+		margin: 1rem 0 0 0;
+	}
+}
+
+@media (max-width: 576px) {
+	.input-group {
+		width: 100%;
+	}
+
+	.carousel-caption {
+		bottom: 30%;
+	}
+
+	.carousel-caption h5 {
+		font-size: 2rem;
+	}
+
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.4;
+	}
+
+	.offer .cards .card {
+		margin: 1rem 0 0 0;
+	}
+
+	.courses .row {
+		justify-content: center !important;
+	}
+}
