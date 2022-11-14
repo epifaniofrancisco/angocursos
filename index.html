@@ -7,17 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngoCursos</title>
 
+    <!-- SEO Meta tags -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta name="author" content="safeq" />
+    <meta name="description" content="">
+    <meta name="topic" content="AngoCursos">
+
     <!-- External links -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/089babe34a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Internal links -->
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS File-->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/index.css">
-
 </head>
 
 <body>
@@ -120,19 +126,19 @@
                         <h5 class="card-title">+10 Formadores</h5>
                     </div>
                 </div>
-                <div class="card ms-md-3 ms-lg-0">
+                <div class="card ms-md-3 ms-lg-3">
                     <div class="card-body">
                         <i class="fa-solid fa-circle-play"></i>
                         <h5 class="card-title">+50 Cursos criados</h5>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card ms-lg-3">
                     <div class="card-body">
                         <i class="fa-solid fa-users"></i>
                         <h5 class="card-title">+100 Estudantes ativos</h5>
                     </div>
                 </div>
-                <div class="card ms-md-3 ms-lg-0">
+                <div class="card ms-md-3 ms-lg-3">
                     <div class="card-body">
                         <i class="fa-solid fa-list"></i>
                         <h5 class="card-title">+10 Categorias</h5>
@@ -142,18 +148,57 @@
         </section>
 
         <!-- Categorias -->
-        <!-- ! Standby -->
-        <section class="container p-lg-0 mb-3">
+        <section class="container p-lg-0 my-5 categories animate__animated animate__fadeInUpBig">
             <h4 class="mt-3">Explore por <br> categorias</h4>
 
             <div class="row justify-content-lg-between categories">
                 <div class="card">
-
                     <div class="card-body">
-                        <div class="card-img"><img src="assets/images/roberto-cortese-unsplash.jpg" alt=""></div>
+                        <div class="icon" style="background: #e1eeff;">
+                            <ion-icon name="globe-outline" style="color: #2282ff;"></ion-icon>
+                        </div>
                         <h5 class="card-title">SAP</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+                        <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon" style="background: #fceef3;">
+                            <ion-icon name="analytics-outline" style="color: #ff689b;"></ion-icon>
+                        </div>
+                        <h5 class="card-title">Business Intelligence</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon" style="background: #F2F4FE;">
+                            <ion-icon name="code-slash-outline" style="color: #4863f7;"></ion-icon>
+                        </div>
+                        <h5 class="card-title">Desenvolvimento web</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon" style="background: #fff0da;">
+                            <ion-icon name="language-outline" style="color: #e98e06;"></ion-icon>
+                        </div>
+                        <h5 class="card-title">Línguas</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon" style="background: #FFE9F2;">
+                            <ion-icon name="brush-outline" style="color: #C70156;"></ion-icon>
+                        </div>
+                        <h5 class="card-title">Design gráfico</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <button class="btn"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
@@ -161,7 +206,7 @@
         </section>
 
         <!-- Cursos -->
-        <section class="container my-3 p-lg-0 courses">
+        <section class="container my-3 p-lg-0 courses animate__animated animate__fadeInLeftBig">
             <h2 class="text-center">Descubra os nossos melhores cursos</h2>
 
             <div class="row justify-content-between">
@@ -180,17 +225,13 @@
                                 <span class="rating-group-text">5.0</span>
                                 <div class="rate-area">
                                     <input type="radio" id="5-star" name="rating" value="5" checked>
-                                    <label for="5-star"
-                                        title="Amazing">5 stars</label>
+                                    <label for="5-star" title="Amazing">5 stars</label>
                                     <input type="radio" id="4-star" name="rating" value="4">
-                                    <label for="4-star"
-                                        title="Good">4 stars</label>
+                                    <label for="4-star" title="Good">4 stars</label>
                                     <input type="radio" id="3-star" name="rating" value="3">
-                                    <label for="3-star"
-                                        title="Average">3 stars</label>
+                                    <label for="3-star" title="Average">3 stars</label>
                                     <input type="radio" id="2-star" name="rating" value="2">
-                                    <label for="2-star"
-                                        title="Not Good">2 stars</label>
+                                    <label for="2-star" title="Not Good">2 stars</label>
                                     <input type="radio" id="1-star" name="rating" value="1"><label for="1-star"
                                         title="Bad">1 star</label>
                                 </div>
@@ -201,31 +242,28 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/images/2532-SAP..jpgL.jpg" class="card-img-top mt-2" alt="sap image">
+                    <img src="assets/images/sap-business-process-automation-software-wireframed-robotic-hand-touching-digital-graph-interface_127544-112.jpg"
+                        class="card-img-top mt-2" alt="sap image">
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
                             <a href="#" class="btn category-group">SAP</a>
 
                             <span class="price">20 000Kz</span>
                         </div>
-                        <h6 class="card-title mt-3">SAP (todos os módulos): Básico ao avançado</h6>
+                        <h6 class="card-title mt-3">SAP MM: Aprenda do zero</h6>
                         <p class="card-text"><span>Paulo Sérgio</span></p>
                         <div class="d-flex">
                             <div class="d-flex rating-group">
                                 <span class="rating-group-text">5.0</span>
                                 <div class="rate-area">
                                     <input type="radio" id="5-star" name="rating" value="5" checked>
-                                    <label for="5-star"
-                                        title="Amazing">5 stars</label>
+                                    <label for="5-star" title="Amazing">5 stars</label>
                                     <input type="radio" id="4-star" name="rating" value="4">
-                                    <label for="4-star"
-                                        title="Good">4 stars</label>
+                                    <label for="4-star" title="Good">4 stars</label>
                                     <input type="radio" id="3-star" name="rating" value="3">
-                                    <label for="3-star"
-                                        title="Average">3 stars</label>
+                                    <label for="3-star" title="Average">3 stars</label>
                                     <input type="radio" id="2-star" name="rating" value="2">
-                                    <label for="2-star"
-                                        title="Not Good">2 stars</label>
+                                    <label for="2-star" title="Not Good">2 stars</label>
                                     <input type="radio" id="1-star" name="rating" value="1"><label for="1-star"
                                         title="Bad">1 star</label>
                                 </div>
@@ -236,31 +274,28 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/images/2532-SAP..jpgL.jpg" class="card-img-top mt-2" alt="sap image">
+                    <img src="assets/images/hand-drawn-web-developers_23-2148819604.jpg" class="card-img-top mt-2"
+                        alt="sap image">
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
-                            <a href="#" class="btn category-group">SAP</a>
+                            <a href="#" class="btn category-group">Desenvolvimento</a>
 
                             <span class="price">20 000Kz</span>
                         </div>
-                        <h6 class="card-title mt-3">SAP (todos os módulos): Básico ao avançado</h6>
+                        <h6 class="card-title mt-3">Desenvolvimento web Completo</h6>
                         <p class="card-text"><span>Paulo Sérgio</span></p>
                         <div class="d-flex">
                             <div class="d-flex rating-group">
                                 <span class="rating-group-text">5.0</span>
                                 <div class="rate-area">
                                     <input type="radio" id="5-star" name="rating" value="5" checked>
-                                    <label for="5-star"
-                                        title="Amazing">5 stars</label>
+                                    <label for="5-star" title="Amazing">5 stars</label>
                                     <input type="radio" id="4-star" name="rating" value="4">
-                                    <label for="4-star"
-                                        title="Good">4 stars</label>
+                                    <label for="4-star" title="Good">4 stars</label>
                                     <input type="radio" id="3-star" name="rating" value="3">
-                                    <label for="3-star"
-                                        title="Average">3 stars</label>
+                                    <label for="3-star" title="Average">3 stars</label>
                                     <input type="radio" id="2-star" name="rating" value="2">
-                                    <label for="2-star"
-                                        title="Not Good">2 stars</label>
+                                    <label for="2-star" title="Not Good">2 stars</label>
                                     <input type="radio" id="1-star" name="rating" value="1"><label for="1-star"
                                         title="Bad">1 star</label>
                                 </div>
@@ -271,31 +306,27 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="assets/images/2532-SAP..jpgL.jpg" class="card-img-top mt-2" alt="sap image">
+                    <img src="assets/images/7088807.jpg" class="card-img-top mt-2" alt="sap image">
                     <div class="card-body">
                         <div class="d-flex justify-content-between">
-                            <a href="#" class="btn category-group">SAP</a>
+                            <a href="#" class="btn category-group">Business Intell</a>
 
                             <span class="price">20 000Kz</span>
                         </div>
-                        <h6 class="card-title mt-3">SAP (todos os módulos): Básico ao avançado</h6>
+                        <h6 class="card-title mt-3">Business Intelligence para profissionais</h6>
                         <p class="card-text"><span>Paulo Sérgio</span></p>
                         <div class="d-flex">
                             <div class="d-flex rating-group">
                                 <span class="rating-group-text">5.0</span>
                                 <div class="rate-area">
                                     <input type="radio" id="5-star" name="rating" value="5" checked>
-                                    <label for="5-star"
-                                        title="Amazing">5 stars</label>
+                                    <label for="5-star" title="Amazing">5 stars</label>
                                     <input type="radio" id="4-star" name="rating" value="4">
-                                    <label for="4-star"
-                                        title="Good">4 stars</label>
+                                    <label for="4-star" title="Good">4 stars</label>
                                     <input type="radio" id="3-star" name="rating" value="3">
-                                    <label for="3-star"
-                                        title="Average">3 stars</label>
+                                    <label for="3-star" title="Average">3 stars</label>
                                     <input type="radio" id="2-star" name="rating" value="2">
-                                    <label for="2-star"
-                                        title="Not Good">2 stars</label>
+                                    <label for="2-star" title="Not Good">2 stars</label>
                                     <input type="radio" id="1-star" name="rating" value="1"><label for="1-star"
                                         title="Bad">1 star</label>
                                 </div>
@@ -313,43 +344,161 @@
         <section class="container my-5 p-lg-0 how-to-start">
             <div class="text-center mb-5">
                 <h2>Como começar um curso</h2>
-                <p class="w-75 text-center mx-auto lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam odit itaque consequatur, hic voluptatem vitae culpa ut architecto aliquam possimus, praesentium eum recusandae beatae, ab a nulla est. Vero, molestiae.</p>
+                <p class="w-75 text-center mx-auto lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quibusdam odit itaque consequatur, hic voluptatem vitae culpa ut architecto aliquam possimus,
+                    praesentium eum recusandae beatae, ab a nulla est. Vero, molestiae.</p>
             </div>
 
             <div class="row justify-content-center justify-content-md-between">
-                <div class="card">
-                    <div class="step">1</div>
-
-                    <h4>Escolha um curso</h4>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quos impedit. Voluptatem esse fugiat facere debitis, rerum eveniet sequi mollitia?</p>
+                <div class="col-md-6 col-lg">
+                    <div class="card">
+                        <div class="step">1</div>
+                        <h4>Escolha um curso</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quos impedit. Voluptatem
+                            esse fugiat facere debitis, rerum eveniet sequi mollitia?</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="step">2</div>
-
-                    <h4>Pague pelo curso</h4>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quos impedit. Voluptatem esse fugiat facere debitis, rerum eveniet sequi mollitia?</p>
+                <div class="col-md-6 col-lg">
+                    <div class="card">
+                        <div class="step">2</div>
+                        <h4>Pague pelo curso</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quos impedit. Voluptatem
+                            esse fugiat facere debitis, rerum eveniet sequi mollitia?</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="step">3</div>
-
-                    <h4>Após pagar comece o curso</h4>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quos impedit. Voluptatem esse fugiat facere debitis, rerum eveniet sequi mollitia?</p>
+                <div class="col-md-6 col-lg mx-auto">
+                    <div class="card">
+                        <div class="step">3</div>
+                        <h4>Após pagar comece o curso</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quos impedit. Voluptatem
+                            esse fugiat facere debitis, rerum eveniet sequi mollitia?</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Ser instrutor -->
-        <section class="container p-lg-0"></section>
+        <section class="container my-5 p-lg-0 become-teacher animate__animated animate__fadeInUpBig">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/Webinar-pana (2).svg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 my-auto ps-lg-2">
+                    <div class="copy">
+                        <h1 class="my-3 teacher-text-title">
+                            Torne-se um <span>professor</span>
+                        </h1>
+                        <p class="my-2 teacher-text-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eum quidem aperiam maxime nam
+                            dignissimos culpa nemo quod quibusdam distinctio est
+                        </p>
+                        <button onclick="location.href='src/pages/'" class="btn mt-3 my-btn-primary">Ensine</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-5 col-lg-3 mt-3 mx-auto">
+                    <a href="" class="footer-brand h4">AngoCursos</a>
+                    <p class="fs-6 mt-4 text-md-justify who-we-are-text">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Aspernatur inventore dolor quo aliquid, ullam accusamus sapiente</p>
+
+                    <ul class="list-inline social-medias">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://wa.me/" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 col-lg-2 mt-3 mx-auto ms-md-3">
+                    <h5 class="mb-4">Categorias</h5>
+
+                    <p>
+                        <a href="" class="underline-hover-effect">ERP</a>
+                    </p>
+                    <p>
+                        <a href="" class="underline-hover-effect">Design</a>
+                    </p>
+                    <p>
+                        <a href="" class="underline-hover-effect">Tecnologia</a>
+                    </p>
+                    <p>
+                        <a href="" class="underline-hover-effect">Business Intelligence</a>
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-lg-2 mt-3 mx-auto ms-md-5">
+                    <h5 class="mb-4">Úteis</h5>
+
+                    <p>
+                        <a href="src/pages/aboutUs.html" class="underline-hover-effect">Sobre nós</a>
+                    </p>
+                    <p>
+                        <a href="src/pages/aboutUs.html#about-company" class="underline-hover-effect">Para empresas</a>
+                    </p>
+                    <p>
+                        <a href="src/pages/aboutUs.html#about-company" class="underline-hover-effect">FAQs</a>
+                    </p>
+                    <p>
+                        <a href="src/pages/aboutUs.html#our-values" class="underline-hover-effect">Termos de uso</a>
+                    </p>
+
+                </div>
+
+                <div class="col-md-5 col-lg-2 mt-3 mx-auto ms-md-3">
+                    <h5 class="mb-4">Contactos</h5>
+
+                    <address>
+                        <p>
+                            <a href="tel:+2449" class="underline-hover-effect">+244 900 000 000</a>
+                        </p>
+                        <p>
+                            <a href="mailto:" class="underline-hover-effect">exemplo@provedor.com</a>
+                        </p>
+                        <p>
+                            <a href="" class="underline-hover-effect">Talatona, Rua da Cereja 5</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <p class="text-light mt-4">Copyright © 2022. Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- JS -->
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+    <!-- Animate JS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <!-- Internal JS -->
     <!-- Bootstrap -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>

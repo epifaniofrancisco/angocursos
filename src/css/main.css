@@ -200,6 +200,52 @@ body {
 	border: none;
 }
 
+
+/* Rodapé | Footer */
+.footer-brand {
+	text-decoration: none;
+}
+
+.list-inline-item {
+	transition: background-color 0.5s;
+}
+
+.list-inline-item a,
+footer p > a {
+	color: white;
+	text-decoration: none;
+}
+
+footer p > a:hover {
+	color: white;
+}
+
+.list-inline-item:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+	border-color: var(--primary-color);
+}
+
+.list-inline-item {
+	width: 43px;
+	height: 43px;
+	font-size: 23px;
+	border: 1px solid;
+	border-radius: 5px;
+	line-height: 43px;
+	text-align: center;
+}
+
+footer h5, .footer-brand {
+	color: var(--primary-color);
+	text-transform: uppercase;
+}
+
+footer .underline-hover-effect:hover {
+	text-decoration: underline;
+}
+
+/* Media queries */
 @media (max-width: 576px) {
 	.input-group {
 		width: 100%;

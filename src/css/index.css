@@ -9,7 +9,6 @@
 	object-position: center center;
 	object-fit: cover;
 	min-height: 35rem;
-	width: 100%;
 }
 
 .carousel-caption {
@@ -49,17 +48,6 @@
 	background-color: var(--primary-color);
 	border-radius: 10px;
 	text-align: center;
-	margin-right: 1rem;
-}
-
-.offer .cards .card .card-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.offer .cards .card:last-child {
-	margin-right: 0;
 }
 
 .offer .card i {
@@ -75,41 +63,39 @@
 /* Categories */
 .categories .card {
 	width: 15rem;
-	height: 16.7rem;
+	height: 17rem;
+	border: none;
 	border-radius: 10px;
 	margin-right: 1rem;
 	margin-top: 1rem;
+	background: #fff;
+	box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+	transition: all 0.3s ease-in-out;
 }
 
-.categories .card .card-img {
-	width: 4.5rem;
-	height: 3.5rem;
+.categories .card:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
-.categories .card .card-img img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.categories .card .icon {
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 2rem;
 }
 
 .categories .card h5 {
-	height: 2rem;
+	height: 2.5rem;
 	border-radius: 10px;
-	margin-right: 1rem;
-	margin-top: 1rem;
+	margin: 1rem 0;
 }
 
 .categories .card i {
 	color: black;
-}
-
-.categories .card button:hover {
-	background-color: var(--primary-color);
-}
-
-.categories .card button:hover i {
-	color: var(--text-white);
-	opacity: 1;
 }
 
 .categories .card .btn {
@@ -118,10 +104,18 @@
 	left: 9.8rem;
 }
 
+.categories .card .btn:hover {
+	background-color: var(--primary-color);
+}
+
 .categories .card .btn i {
 	font-size: 1.5rem;
-	color: #121212;
 	opacity: 0.7;
+}
+
+.categories .card .btn:hover i {
+	color: var(--text-white);
+	opacity: 1;
 }
 
 /* Courses */
@@ -131,28 +125,22 @@
 	background-color: white;
 }
 
+.courses .card img {
+	height: 145px;
+}
+
+.courses .card .category-group {
+	width: 8rem;
+	height: 100%;
+	font-size: 0.85rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
 .courses .card .d-flex {
 	height: 2rem;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.courses .card .d-flex p {
-	margin: 0;
-}
-
-.courses .card .btn {
-	color: var(--text-white);
-	background-color: #fd6a88;
-	cursor: pointer;
-}
-
-.courses .card .category-group {
-	width: 6rem;
-	height: 2rem;
-	font-size: 1rem;
-	text-align: center;
-	border-radius: 5px;
 }
 
 .courses .card .price {
@@ -165,22 +153,31 @@
 	margin-bottom: 0;
 }
 
+.courses .card .card-body .card-title {
+	height: 2.5rem;
+}
+
 .courses .card .btn {
 	color: var(--text-white);
-	background-color: #fd6a88;
+	background-color: var(--primary-color);
 	cursor: pointer;
 }
 
+.courses .card .btn:hover {
+	color: var(--text-white);
+	background-color: var(--secondary-color);
+}
+
 .courses .rating-group-text {
-	font-size: .9rem;
+	font-size: 0.9rem;
 }
 
 .courses .rating-group-text:first-child {
-	margin-right: .2rem;
+	margin-right: 0.2rem;
 }
 
 .courses .rating-group-text:last-child {
-	margin-left: .2rem;
+	margin-left: 0.2rem;
 }
 
 .rate-area {
@@ -211,17 +208,19 @@
 	color: var(--primary-color);
 }
 
-
 /* Como começar */
 .how-to-start .row .card {
 	width: 23rem;
+	padding: 0.8rem;
 	border-radius: 2px;
 }
 
 .how-to-start .row .step {
 	width: 4rem;
 	height: 3rem;
-	background-color: #ddd;
+	color: var(--text-white);
+	background-color: #cd022b;
+	opacity: 0.8;
 	font-size: 1.7rem;
 	display: flex;
 	justify-content: center;
@@ -229,6 +228,14 @@
 	margin: 1rem 0;
 }
 
+/* Torne-se um professor */
+.become-teacher .teacher-text-title span {
+	color: var(--primary-color);
+}
+
+.become-teacher .teacher-text-description {
+	text-align: justify;
+}
 
 /* Media Queries */
 @media (max-width: 992px) {
@@ -239,6 +246,11 @@
 
 	.offer .cards .card {
 		margin: 1rem 0 0 0;
+	}
+
+	.how-to-start .row .card {
+		width: 100%;
+		margin-top: 1rem;
 	}
 }
 
@@ -266,5 +278,17 @@
 
 	.courses .row {
 		justify-content: center !important;
+	}
+
+	.categories .row {
+		justify-content: center !important;
+	}
+
+	.become-teacher h1 {
+		text-align: center;
+	}
+
+	.become-teacher button {
+		width: 100%;
 	}
 }
